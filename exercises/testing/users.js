@@ -23,6 +23,7 @@ const findUser = (id) =>
 const deleteUser = (id) =>
 	new Promise((resolve, reject) => {
 		const _id = fixId(id);
+		debugger;
 		const i = users.findIndex((user) => user.id === _id);
 
 		if (i < 0) {
